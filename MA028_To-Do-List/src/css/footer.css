@@ -1,0 +1,56 @@
+body {
+    background: #161616;
+    color: #b3b3b3; 
+}
+
+header {
+    background: #4b052c; /* Darker gray for the header background */
+    color: #ffffff; /* White text color for header */
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #83a4c5;
+    padding: 10px 0;
+}
+
+.social-media {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+}
+
+.social-media img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-media span{
+    margin-top: 5px;
+}
+.social-media img:hover {
+    transform: scale(1.2);
+}
+
+.copyright {
+    color: #21041f; /* Light gray text color */
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size:30px ;
+}
+
+.connect {
+    color: #b3b3b3; /* Light gray text color */
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.social-media span {
+    color: #b3b3b3; /* Light gray text color */
+    font-size: 0.8em;
+}

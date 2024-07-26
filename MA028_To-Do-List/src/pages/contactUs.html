@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Crafter</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="../css/nav.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/contactUs.css" />
+  </head>
+
+  <body>
+    <nav>
+      <a href="../index.html" style="border: none">
+        <label for="" class="logo">TaskCrafter</label>
+      </a>
+      <div class="list">
+        <ul class="navbar-links">
+          <li>
+            <a href="../index.html">Home</a>
+          </li>
+          <li>
+            <a href="#about">About Us</a>
+          </li>
+          <li>
+            <a href="./contactUs.html">Contact</a>
+          </li>
+          <li></li>
+        </ul>
+        <div class="user">
+          <img src="../images/boy.png" alt="" />
+          <div class="username">Hi Nikhil!!!</div>
+        </div>
+      </div>
+      <label for="" id="icon">
+        <button class="menu_button">
+          <i class="fa fa-bars"></i>
+        </button>
+      </label>
+    </nav>
+    <center>
+      <div class="contact-form">
+        <div class="form1">
+          <h1>Your Queries :</h1>
+          <form action="" name="form2" onsubmit="validate()">
+            <table
+              style="
+                width: 80%;
+                color: white;
+                text-align: center;
+                line-height: 50px;
+                font-size: 20px;
+              "
+            >
+              <tr>
+                <td style="width: 30%; text-align: end">Enter Name :</td>
+                <td>
+                  <input type="text" id="" style="width: 70%" name="cname" />
+                </td>
+              </tr>
+              <tr>
+                <td style="width: 30%; text-align: end">Enter Email :</td>
+                <td>
+                  <input type="email" id="" style="width: 70%" name="cemail" />
+                </td>
+              </tr>
+              <tr>
+                <td style="width: 30%; text-align: end">Enter Contact :</td>
+                <td>
+                  <input type="tel" id="" style="width: 70%" name="cphone" />
+                </td>
+              </tr>
+              <tr>
+                <td style="width: 30%; text-align: end">Your Query :</td>
+                <td>
+                  <textarea
+                    id=""
+                    cols="40"
+                    rows="5"
+                    style="border-radius: 10px"
+                    name="cquery"
+                  ></textarea>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <input type="submit" value="Submit" class="submit_btn" />
+                  <input type="reset" value="Reset" class="reset_btn" />
+                </td>
+              </tr>
+            </table>
+          </form>
+        </div>
+      </div>
+    </center>
+
+    <div class="footer" id="contact">
+      <hr />
+      <div class="copyright">Made By Nikhil Lathiya</div>
+      <div class="social-media">
+        <span style="color: rgb(42, 1, 45)">
+          <font size="5px">Connect With Me On</font></span
+        >
+        <a
+          href="https://www.linkedin.com/in/nikhil-lathiya-071092221/"
+          style="border: none"
+          target="_blank"
+        >
+          <img
+            src="/images/social_media/linkedin-logo-png-1854.png"
+            alt=""
+            srcset=""
+          />
+        </a>
+        <a
+          href="https://www.instagram.com/nikhil_lathiya_31/"
+          style="border: none"
+          target="_blank"
+        >
+          <img
+            src="/images/social_media/logo-ig-png-32464.png"
+            alt=""
+            srcset=""
+          />
+        </a>
+        <a
+          href="https://github.com/Nikhil31Lathiya"
+          style="border: none"
+          target="_blank"
+        >
+          <img src="/images/social_media/github.png" alt="" srcset="" />
+        </a>
+        <a
+          href="https://www.instagram.com/nikhil_lathiya_31/"
+          style="border: none"
+          target="_blank"
+        >
+          <img
+            src="/images/social_media/snapchat-logo-png-1450 (1).png"
+            alt=""
+            srcset=""
+          />
+        </a>
+      </div>
+    </div>
+  </body>
+  <script>
+    function validate() {
+      let cname = document.forms["form2"]["cname"].value;
+      let cemail = document.forms["form2"]["cemail"].value;
+      let cphone = document.forms["form2"]["cphone"].value;
+      let cquery = document.forms["form2"]["cquery"].value;
+
+      console.log(cname);
+
+      if (cname === "") {
+        alert("Please Enter Name.");
+      } else if (cemail === "") {
+        alert("Please Enter Email.");
+      } else if (cphone === "") {
+        alert("Please Enter Contact Number.");
+      } else if (cquery === "") {
+        alert("Please Enter Your Query.");
+      }
+    }
+  </script>
+</html>

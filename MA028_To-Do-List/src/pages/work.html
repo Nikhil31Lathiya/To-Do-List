@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Work</title>
+    <link rel="stylesheet" href="../css/nav.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/taskList.css" />
+
+    <script src="../js/work.js"></script>
+  </head>
+  <body onload="readAll()" style="overflow-y: hidden">
+    <nav>
+      <a href="../index.html" style="border: none">
+        <label for="" class="logo">TaskCrafter</label>
+      </a>
+      <div class="list">
+        <ul class="navbar-links">
+          <li>
+            <a href="../index.html">Home</a>
+          </li>
+          <li>
+            <a href="#about">About Us</a>
+          </li>
+          <li>
+            <a href="./contactUs.html">Contact</a>
+          </li>
+          <li></li>
+        </ul>
+        <div class="user">
+          <img src="../images/boy.png" alt="" />
+          <div class="username">Hi Nikhil!!!</div>
+        </div>
+      </div>
+      <label for="" id="icon">
+        <button class="menu_button">
+          <i class="fa fa-bars"></i>
+        </button>
+      </label>
+    </nav>
+    <div class="container">
+      <div class="sidebar">
+        <ul class="sidebar-list">
+          <li>
+            <img src="../images/healthcare.png" alt="Health" /><a
+              href="../pages/health.html"
+              >Health</a
+            >
+          </li>
+
+          <li>
+            <img src="../images/web-design.png" alt="Coding" /><a
+              href="../pages/coding.html"
+              ><span class="hello">Coding</span></a
+            >
+          </li>
+          <li>
+            <img src="../images/education.png" alt="Education" /><a
+              href="../pages/education.html"
+              >Education</a
+            >
+          </li>
+          <li>
+            <img src="../images/saving.png" alt="Finance" /><a
+              href="../pages/finance.html"
+              >Finance</a
+            >
+          </li>
+          <li>
+            <img src="../images/dumbbell.png" alt="Fitness" /><a
+              href="../pages/fitness.html"
+              >Fitness</a
+            >
+          </li>
+
+          <li>
+            <img src="../images/shopping.png" alt="Shopping" /><a
+              href="../pages/shopping.html"
+              >Shopping</a
+            >
+          </li>
+          <li>
+            <img src="../images/briefcase.png" alt="Work" /><a
+              href="../pages/work.html"
+              ><span class="hello">Work</span></a
+            >
+          </li>
+          <li>
+            <img src="../images/calendar.png" alt="Calendar" /><a
+              href="../pages/calender.html"
+              >Calendar</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="content">
+        <div class="heading">
+          <img
+            src="../images/briefcase.png"
+            alt=""
+            width="80px"
+            height="80px"
+          />
+          <center></center>
+          <h1>Work</h1>
+        </div>
+        <div class="addTask">
+          <form action="" class="form1">
+            <center>
+              <table class="form-table">
+                <tr>
+                  <td style="font-size: 25px">Enter Task Name</td>
+                  <td style="width: 60%; text-align: start">
+                    <input
+                      type="text"
+                      name=""
+                      id="name"
+                      style="width: 97%"
+                      class="text_in"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td style="font-size: 25px">Enter Task Description</td>
+                  <td>
+                    <textarea
+                      name=""
+                      id="details"
+                      cols="82"
+                      rows="5"
+                    ></textarea>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2" style="text-align: center">
+                    <input
+                      class="submit"
+                      type="button"
+                      value="Submit"
+                      class="submit"
+                      onclick="create()"
+                    />
+                    <input type="reset" value="Clear" class="clear" />
+                  </td>
+                </tr>
+              </table>
+            </center>
+          </form>
+        </div>
+        <div class="tasklist">
+          <table border="1" class="task_table">
+            <thead>
+              <tr>
+                <th width="10%">Complete</th>
+                <th>Task List</th>
+                <th>Task Details</th>
+                <th>Edit</th>
+                <th>Delete</th>
+              </tr>
+            </thead>
+            <tbody id="root" class="data_table"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

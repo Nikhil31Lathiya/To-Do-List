@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+nav {
+    height: 75px;
+    width: 100vw;
+    background: #050c21; 
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    border-bottom: 2px solid #FFD700; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+.logo {
+    margin: auto;
+    margin-left: 40px;
+    align-items: center;
+    font-size: 35px;
+    font-weight: bold;
+    color: #fff; 
+    padding: 0 20px;
+    line-height: 75px;
+}
+
+nav ul {
+    float: right;
+}
+
+nav li {
+    display: inline-block;
+    line-height: 75px;
+}
+
+nav a {
+    color: #fff;
+    font-size: 20px;
+    border-bottom: 2px solid transparent; 
+    padding: 4px 7px;
+    border-radius: 3px;
+    font-weight: bold;
+    transition: color 0.3s ease, border-bottom 0.3s ease, background 0.3s ease;
+}
+
+nav #icon {
+    margin: auto;
+    line-height: 75px;
+    float: right;
+    display: none;
+    cursor: pointer;
+}
+
+.logo:hover {
+    cursor: pointer;
+    color: #9ceaf1;
+}
+
+a.active,
+a:hover {
+    color: #03a9f4; 
+    border-bottom: 2px solid #03a9f4; 
+}
+
+.nav-search:hover {
+    border: 1px solid #00bcd4; /* Cyan border on hover for search */
+    color: #00bcd4; /* Cyan color on hover for search */
+    background: rgba(0, 188, 212, 0.2); /* Slightly transparent cyan background on hover */
+    transition: transform 0.2s ease-in-out, background 0.2s ease;
+}
+
+.list {
+    margin-left: 50%;
+    margin-right: 0;
+    width: 100%;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    width: auto;
+    font-size: 20px;
+}
+
+.user img {
+    width: 25%;
+    border-radius: 50%;
+}
+
+header{
+    padding: 0;
+}
